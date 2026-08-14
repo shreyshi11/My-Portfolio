@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shreyshi Sriwastav | Software Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: "#0D1021",
+                        surface: "#171A32",
+                        lavender: "#A78BFA",
+                        cyan: "#67E8F9",
+                        light: "#F4F1FF",
+                        muted: "#A9A6B8",
+                        border: "#292D4A"
+                    },
+
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        display: ["Space Grotesk", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-navy text-light font-sans">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header id="navbar"
+        class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+
+        <nav class="max-w-6xl mx-auto px-6 lg:px-8 py-5 flex items-center justify-between">
+
+            <!-- Logo -->
+
+            <a href="#home"
+                class="font-display font-semibold text-xl tracking-wide">
+                SHREYSHI<span class="text-lavender">.</span>
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <div class="hidden md:flex items-center gap-8 text-sm text-muted">
+
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+
+            </div>
+
+
+            <!-- Resume Button -->
+
+            <a href="#contact"
+                class="hidden md:flex items-center gap-2 px-4 py-2 rounded-full border border-border hover:border-lavender hover:text-lavender transition duration-300 text-sm">
+
+                Resume
+
+                <span>↗</span>
+
+            </a>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button id="menu-btn"
+                class="md:hidden text-light text-2xl">
+
+                ☰
+
+            </button>
+
+        </nav>
+
+
+        <!-- Mobile Menu -->
+
+        <div id="mobile-menu"
+            class="hidden md:hidden border-t border-border bg-navy/95 backdrop-blur-lg">
+
+            <div class="flex flex-col px-6 py-5 gap-5 text-muted">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section id="home"
+            class="relative min-h-screen flex items-center overflow-hidden">
+
+            <!-- Background Glow -->
+
+            <div class="glow glow-one"></div>
+            <div class="glow glow-two"></div>
+
+
+            <!-- Grid Background -->
+
+            <div class="absolute inset-0 grid-background"></div>
+
+
+            <div class="max-w-6xl mx-auto px-6 lg:px-8 w-full pt-24">
+
+                <div class="max-w-4xl">
+
+                    <!-- Small Introduction -->
+
+                    <div class="hero-item flex items-center gap-3 mb-7">
+
+                        <span class="w-8 h-px bg-lavender"></span>
+
+                        <span class="text-sm tracking-[0.2em] uppercase text-muted">
+                            Software Developer · AI/ML
+                        </span>
+
+                    </div>
+
+
+                    <!-- Main Heading -->
+
+                    <h1
+                        class="hero-item font-display text-5xl sm:text-6xl lg:text-8xl font-semibold leading-[1.05] tracking-tight">
+
+                        Hi, I'm
+                        <span class="text-lavender">Shreyshi.</span>
+
+                        <br>
+
+                        I build
+                        <span class="gradient-text">intelligent</span>
+
+                        <br class="hidden sm:block">
+
+                        digital experiences.
+
+                    </h1>
+
+
+                    <!-- Description -->
+
+                    <p
+                        class="hero-item mt-8 max-w-2xl text-muted text-base sm:text-lg leading-relaxed">
+
+                        A software developer passionate about building
+                        practical solutions with modern technologies,
+                        backend systems and artificial intelligence.
+
+                    </p>
+
+
+                    <!-- Buttons -->
+
+                    <div class="hero-item mt-10 flex flex-wrap gap-4">
+
+                        <a href="#projects"
+                            class="group flex items-center gap-3 px-6 py-3 rounded-full bg-lavender text-navy font-medium hover:bg-light transition duration-300">
+
+                            View My Work
+
+                            <span class="group-hover:translate-x-1 transition">
+                                →
+                            </span>
+
+                        </a>
+
+
+                        <a href="#contact"
+                            class="flex items-center gap-3 px-6 py-3 rounded-full border border-border hover:border-lavender hover:text-lavender transition duration-300">
+
+                            Let's Connect
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- Quick Links -->
+
+                    <div class="hero-item mt-16 flex items-center gap-6 text-sm text-muted">
+
+                        <span>Find me on</span>
+
+                        <a href="https://github.com/shreyshi11"
+                            class="social-link">
+                            GitHub
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/shreyshisriwastav"
+                            class="social-link">
+                            LinkedIn
+                        </a>
+
+                        <a href="https://leetcode.com/u/shreyshi123/"
+                            class="social-link">
+                            LeetCode
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Scroll Indicator -->
+
+                <div class="absolute bottom-8 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-2 text-muted">
+
+                    <span class="text-xs tracking-widest uppercase">
+                        Scroll
+                    </span>
+
+                    <div class="scroll-line"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+       <!-- ================= ABOUT ================= -->
+
+<section id="about" class="relative py-32 lg:py-40">
+
+    <div class="max-w-6xl mx-auto px-6 lg:px-8">
+
+        <!-- Section Heading -->
+
+        <div class="section-heading mb-16">
+
+            <p class="section-number">01 — ABOUT</p>
+
+            <h2 class="section-title">
+                Turning ideas into
+                <span class="text-lavender">real solutions.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="grid lg:grid-cols-[1.4fr_0.6fr] gap-16 items-start">
+
+
+            <!-- Main About Text -->
+
+            <div class="space-y-6">
+
+                <p class="about-text">
+                    I'm <span class="text-light font-medium">Shreyshi Sriwastav</span>,
+                    a B.Tech Information Technology student and aspiring
+                    software developer who enjoys building practical,
+                    technology-driven solutions.
+                </p>
+
+                <p class="about-text">
+                    My interests lie across
+                    <span class="text-lavender">software development,
+                    backend systems and artificial intelligence.</span>
+                    I enjoy solving problems, learning new technologies
+                    and turning ideas into functional products.
+                </p>
+
+                <p class="about-text">
+                    Currently, I'm focused on strengthening my
+                    <span class="text-cyan">DSA, system design and
+                    development skills</span> while working on projects
+                    that combine software engineering with AI/ML.
+                </p>
+
+
+                <!-- Currently Exploring -->
+
+                <div class="exploring-box mt-10">
+
+                    <div class="flex items-center gap-3 mb-4">
+
+                        <span class="status-dot"></span>
+
+                        <span class="text-sm text-muted">
+                            Currently exploring
+                        </span>
+
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+
+                        <span class="interest-tag">
+                            Backend Development
+                        </span>
+
+                        <span class="interest-tag">
+                            System Design
+                        </span>
+
+                        <span class="interest-tag">
+                            AI / ML
+                        </span>
+
+                        <span class="interest-tag">
+                            Advanced DSA
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Stats -->
+
+            <div class="grid grid-cols-2 lg:grid-cols-1 gap-4">
+
+                <div class="stat-card">
+
+                    <span class="stat-number">550+</span>
+
+                    <span class="stat-label">
+                        Coding Problems
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span class="stat-number">5+</span>
+
+                    <span class="stat-label">
+                        Projects Built
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span class="stat-number">8.5+</span>
+
+                    <span class="stat-label">
+                        CGPA
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills"
+    class="relative py-32 lg:py-40 border-t border-border">
+
+    <div class="max-w-6xl mx-auto px-6 lg:px-8">
+
+
+        <!-- Heading -->
+
+        <div class="section-heading mb-16">
+
+            <p class="section-number">02 — SKILLS</p>
+
+            <h2 class="section-title">
+                Tools I use to
+                <span class="text-lavender">build.</span>
+            </h2>
+
+        </div>
+
+
+
+        <!-- Skills Grid -->
+
+        <div class="grid md:grid-cols-2 gap-5">
+
+
+            <!-- Languages -->
+
+            <div class="skill-card">
+
+                <div class="skill-card-header">
+
+                    <span class="skill-index">01</span>
+
+                    <h3>Languages</h3>
+
+                </div>
+
+                <div class="skill-tags">
+
+                    <span>C++</span>
+                    <span>Python</span>
+                    <span>JavaScript</span>
+                    <span>C</span>
+                    <span>SQL</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Development -->
+
+            <div class="skill-card">
+
+                <div class="skill-card-header">
+
+                    <span class="skill-index">02</span>
+
+                    <h3>Development</h3>
+
+                </div>
+
+                <div class="skill-tags">
+
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Firebase</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- AI / ML -->
+
+            <div class="skill-card">
+
+                <div class="skill-card-header">
+
+                    <span class="skill-index">03</span>
+
+                    <h3>AI / Machine Learning</h3>
+
+                </div>
+
+                <div class="skill-tags">
+
+                    <span>TensorFlow</span>
+                    <span>Keras</span>
+                    <span>Scikit-learn</span>
+                    <span>OpenCV</span>
+                    <span>XGBoost</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Tools -->
+
+            <div class="skill-card">
+
+                <div class="skill-card-header">
+
+                    <span class="skill-index">04</span>
+
+                    <h3>Tools & Database</h3>
+
+                </div>
+
+                <div class="skill-tags">
+
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>VS Code</span>
+                    <span>Google Colab</span>
+                    <span>MySQL</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Bottom Tech Line -->
+
+        <div class="tech-line mt-20">
+
+            <span>PROBLEM SOLVER</span>
+
+            <span class="line"></span>
+
+            <span>BUILDER</span>
+
+            <span class="line"></span>
+
+            <span>CONTINUOUS LEARNER</span>
+
+        </div>
+
+    </div>
+
+</section>
+       <!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="relative py-32 lg:py-40 border-t border-border">
+
+    <div class="max-w-6xl mx-auto px-6 lg:px-8">
+
+        <!-- Section Heading -->
+
+        <div class="section-heading mb-20">
+
+            <p class="section-number">03 — PROJECTS</p>
+
+            <h2 class="section-title">
+                Things I've
+                <span class="text-lavender">built.</span>
+            </h2>
+
+            <p class="mt-6 max-w-2xl text-muted leading-relaxed">
+                A selection of projects where I explored software
+                development, artificial intelligence and practical
+                problem-solving.
+            </p>
+
+        </div>
+
+
+       
+
+
+
+        <!-- ================= PROJECT 02 ================= -->
+
+        <article class="project-item reverse reveal">
+
+            <div class="project-number">
+                02
+            </div>
+
+            <div class="project-content">
+
+                <div class="project-meta">
+                    WEB DEVELOPMENT · EDUCATION
+                </div>
+
+                <h3 class="project-title">
+                    EduNavia
+                </h3>
+
+                <p class="project-description">
+                    A personalized university and course navigation
+                    platform that helps students explore institutions
+                    and make informed academic decisions through
+                    interactive search and filtering.
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Firebase</span>
+                    <span>Google Calendar API</span>
+
+                </div>
+
+
+                <div class="project-links">
+
+                    <a href="https://edunavia.onrender.com/"
+                        class="project-link">
+                        View Project
+                        <span>↗</span>
+                    </a>
+
+                    <a href="https://github.com/shreyshi11"
+                        class="project-link secondary">
+                        GitHub
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-visual">
+
+                <div class="project-glow"></div>
+
+                <div class="project-visual-content">
+
+                    <span class="visual-label">
+                        EDUCATION
+                    </span>
+
+                    <div class="visual-symbol">
+                        EN
+                    </div>
+
+                    <span class="visual-bottom">
+                        EXPLORE · DISCOVER · DECIDE
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ================= PROJECT 03 ================= -->
+
+        <article class="project-item reveal">
+
+            <div class="project-number">
+                03
+            </div>
+
+            <div class="project-content">
+
+                <div class="project-meta">
+                    DEEP LEARNING · COMPUTER VISION
+                </div>
+
+                <h3 class="project-title">
+                    Skin Cancer Detection
+                </h3>
+
+                <p class="project-description">
+                    A deep learning-based image classification system
+                    for detecting different skin lesion categories using
+                    transfer learning with MobileNetV2.
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>Python</span>
+                    <span>TensorFlow</span>
+                    <span>Keras</span>
+                    <span>MobileNetV2</span>
+                    <span>OpenCV</span>
+
+                </div>
+
+
+                <div class="project-links">
+
+                    <a href="#"
+                        class="project-link">
+                        View Project
+                        <span>↗</span>
+                    </a>
+
+                    <a href=" https://github.com/shreyshi11/skin-cancer-detection-ui"
+                        class="project-link secondary">
+                        GitHub
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-visual">
+
+                <div class="project-glow"></div>
+
+                <div class="project-visual-content">
+
+                    <span class="visual-label">
+                        COMPUTER VISION
+                    </span>
+
+                    <div class="visual-symbol">
+                        CV
+                    </div>
+
+                    <span class="visual-bottom">
+                        IMAGE · MODEL · CLASSIFICATION
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ================= PROJECT 04 ================= -->
+
+        <article class="project-item reverse reveal">
+
+            <div class="project-number">
+                04
+            </div>
+
+            <div class="project-content">
+
+                <div class="project-meta">
+                    PYTHON · OOP · FILE HANDLING
+                </div>
+
+                <h3 class="project-title">
+                    Student Management System
+                </h3>
+
+                <p class="project-description">
+                    A menu-driven student management application built
+                    using Python OOP principles with JSON-based file
+                    handling for storing and managing student records.
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>Python</span>
+                    <span>OOP</span>
+                    <span>JSON</span>
+                    <span>File Handling</span>
+
+                </div>
+
+
+                <div class="project-links">
+
+                    <a href="#"
+                        class="project-link">
+                        View Project
+                        <span>↗</span>
+                    </a>
+
+                    <a href="https://github.com/shreyshi11/Student-Management-System"
+                        class="project-link secondary">
+                        GitHub
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-visual">
+
+                <div class="project-glow"></div>
+
+                <div class="project-visual-content">
+
+                    <span class="visual-label">
+                        SOFTWARE
+                    </span>
+
+                    <div class="visual-symbol">
+                        SMS
+                    </div>
+
+                    <span class="visual-bottom">
+                        OOP · DATA · MANAGEMENT
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ================= PROJECT 05 ================= -->
+
+        <article class="project-item reveal">
+
+            <div class="project-number">
+                05
+            </div>
+
+            <div class="project-content">
+
+                <div class="project-meta">
+                    PYTHON · OOP · DATABASE
+                </div>
+
+                <h3 class="project-title">
+                    Library Management System
+                </h3>
+
+                <p class="project-description">
+                    A management system developed to organize books,
+                    users and borrowing records while applying
+                    object-oriented programming and structured
+                    data management.
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>Python</span>
+                    <span>OOP</span>
+                    <span>File Handling</span>
+
+                </div>
+
+
+                <div class="project-links">
+
+                    <a href="#"
+                        class="project-link">
+                        View Project
+                        <span>↗</span>
+                    </a>
+
+                    <a href="https://github.com/shreyshi11/Library-Management-System"
+                        class="project-link secondary">
+                        GitHub
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-visual">
+
+                <div class="project-glow"></div>
+
+                <div class="project-visual-content">
+
+                    <span class="visual-label">
+                        SOFTWARE
+                    </span>
+
+                    <div class="visual-symbol">
+                        LMS
+                    </div>
+
+                    <span class="visual-bottom">
+                        BOOKS · USERS · RECORDS
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- Bottom -->
+
+        <div class="projects-footer">
+
+            <span>
+                MORE PROJECTS
+            </span>
+
+            <span class="footer-line"></span>
+
+            <span>
+                ON GITHUB ↗
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- ================= EXPERIENCE ================= -->
+
+<section id="experience"
+    class="relative py-32 lg:py-40 border-t border-border">
+
+    <div class="max-w-6xl mx-auto px-6 lg:px-8">
+
+        <!-- Heading -->
+
+        <div class="section-heading mb-20 reveal">
+
+            <p class="section-number">04 — EXPERIENCE</p>
+
+            <h2 class="section-title">
+                Where I've
+                <span class="text-lavender">worked & learned.</span>
+            </h2>
+
+        </div>
+
+
+        <!-- Experience Timeline -->
+
+        <div class="experience-wrapper">
+
+
+            <!-- Experience 01 -->
+
+            <!-- Experience 01 -->
+
+<article class="experience-item reveal">
+
+    <div class="experience-marker">
+        <span></span>
+    </div>
+
+    <div class="experience-content">
+
+        <div class="experience-top">
+
+            <div>
+
+                <p class="experience-type">
+                    INTERNSHIP · PYTHON DEVELOPMENT
+                </p>
+
+                <h3>
+                    Python Development Intern
+                </h3>
+
+                <p class="experience-company">
+                    Kinetrexa Software Private Limited
+                </p>
+
+            </div>
+
+            <span class="experience-date">
+                2026
+            </span>
+
+        </div>
+
+
+        <p class="experience-description">
+
+            Worked as a Python Development Intern, developing practical
+            applications using Python and object-oriented programming.
+            Completed two projects focused on managing student records
+            and library operations.
+
+        </p>
+
+
+        <div class="experience-projects">
+
+            <div class="experience-project">
+
+                <span>01</span>
+
+                <strong>
+                    Student Management System
+                </strong>
+
+                <p>
+                    Menu-driven system for managing student records
+                    using Python OOP and JSON-based file handling.
+                </p>
+
+            </div>
+
+
+            <div class="experience-project">
+
+                <span>02</span>
+
+                <strong>
+                    Library Management System
+                </strong>
+
+                <p>
+                    Python-based system for managing books, users
+                    and library transactions.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="experience-tags">
+
+            <span>Python</span>
+            <span>OOP</span>
+            <span>JSON</span>
+            <span>File Handling</span>
+
+        </div>
+
+    </div>
+
+</article>
+
+
+
+            <!-- Experience 02 -->
+
+            <article class="experience-item reveal">
+
+                <div class="experience-marker">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="experience-content">
+
+                    <div class="experience-top">
+
+                        <div>
+
+                            <p class="experience-type">
+                                RESEARCH
+                            </p>
+
+                            <h3>
+                                IEEE Research Paper Presentation
+                            </h3>
+
+                        </div>
+
+                        <span class="experience-date">
+                            2026
+                        </span>
+
+                    </div>
+
+
+                    <p class="experience-description">
+
+                        Presented a research paper at an IEEE conference
+                        hosted by MANIT Bhopal, gaining experience in
+                        technical research, documentation and academic
+                        presentation.
+
+                    </p>
+
+
+                    <div class="experience-tags">
+
+                        <span>Research</span>
+                        <span>IEEE</span>
+                        <span>Technical Presentation</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ================= ACHIEVEMENTS ================= -->
+
+<section id="achievements"
+    class="relative py-32 lg:py-40 border-t border-border">
+
+    <div class="max-w-6xl mx-auto px-6 lg:px-8">
+
+        <!-- Heading -->
+
+        <div class="section-heading mb-16 reveal">
+
+            <p class="section-number">05 — ACHIEVEMENTS</p>
+
+            <h2 class="section-title">
+                Milestones I've
+                <span class="text-lavender">earned.</span>
+            </h2>
+
+            <p class="mt-6 max-w-2xl text-muted leading-relaxed">
+                Competitions, academics, research and problem-solving
+                milestones that reflect my growth beyond projects.
+            </p>
+
+        </div>
+
+
+        <!-- Achievement Grid -->
+
+        <div class="achievement-grid">
+
+         <!-- 01 GATE -->
+
+            <article class="achievement-card reveal">
+
+                <div class="achievement-top">
+
+                    <span class="achievement-number">
+                        02
+                    </span>
+
+                    <span class="achievement-icon">
+                        ✦
+                    </span>
+
+                </div>
+
+                <div class="achievement-content">
+
+                    <p class="achievement-category">
+                        ACADEMICS
+                    </p>
+
+                    <h3>
+                        GATE 2026 Qualified
+                    </h3>
+
+                    <p>
+                        Qualified the Graduate Aptitude Test in
+                        Engineering (GATE) 2026 in Computer Science
+                        and Information Technology.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 02 Hackathon SHEBuilds -->
+
+            <article class="achievement-card reveal">
+
+                <div class="achievement-top">
+
+                    <span class="achievement-number">
+                        01
+                    </span>
+
+                    <span class="achievement-icon">
+                        🏆
+                    </span>
+
+                </div>
+
+                <div class="achievement-content">
+
+                    <p class="achievement-category">
+                        HACKATHON
+                    </p>
+
+                    <h3>
+                        HOVERROBOTICS SPONSOR TRACK WINNER
+                    </h3>
+
+                    <p>
+                        Winner of the HoverRobotics Sponsor Track at SheBuildsCommunity.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+           
+
+             <!-- 03 Paranox  -->
+
+        <article class="achievement-card reveal">
+
+    <div class="achievement-top">
+        <span class="achievement-number">03</span>
+        <span class="achievement-icon">↗</span>
+    </div>
+
+    <div class="achievement-content">
+
+        <p class="achievement-category">
+            HACKATHON
+        </p>
+
+        <h3>
+            Paranox Hackathon
+        </h3>
+
+        <p>
+            Top 40 Finalist at the Paranox Hackathon as part of
+            TeCHXNINjAS.
+        </p>
+
+    </div>
+
+</article>
+
+            <!-- 04 WCHL -->
+
+            <article class="achievement-card reveal">
+
+                <div class="achievement-top">
+
+                    <span class="achievement-number">
+                        03
+                    </span>
+
+                    <span class="achievement-icon">
+                        ↗
+                    </span>
+
+                </div>
+
+                <div class="achievement-content">
+
+                    <p class="achievement-category">
+                        HACKATHON
+                    </p>
+
+                    <h3>
+                       WCHL — REGIONAL ROUND QUALIFIED
+                    </h3>
+
+                    <p>
+                        Qualified for the Regional Round of the World Computer Hackathon League (WCHL).
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 05 IEEE -->
+
+            <article class="achievement-card reveal">
+
+                <div class="achievement-top">
+
+                    <span class="achievement-number">
+                        04
+                    </span>
+
+                    <span class="achievement-icon">
+                        ◇
+                    </span>
+
+                </div>
+
+                <div class="achievement-content">
+
+                    <p class="achievement-category">
+                        RESEARCH
+                    </p>
+
+                    <h3>
+                        IEEE Conference Presentation
+                    </h3>
+
+                    <p>
+                        Presented a research paper at an IEEE conference
+                        hosted by MANIT Bhopal.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 06 Coding -->
+
+            <article class="achievement-card reveal">
+
+                <div class="achievement-top">
+
+                    <span class="achievement-number">
+                        05
+                    </span>
+
+                    <span class="achievement-icon">
+                        &lt;/&gt;
+                    </span>
+
+                </div>
+
+                <div class="achievement-content">
+
+                    <p class="achievement-category">
+                        PROBLEM SOLVING
+                    </p>
+
+                    <h3>
+                        550+ Coding Problems
+                    </h3>
+
+                    <p>
+                        Solved 550+ programming problems across coding
+                        platforms while consistently strengthening
+                        data structures and algorithms.
+                    </p>
+
+                </div>
+
+            </article>
+
+             <!-- 07 CodeChef -->
+
+          <article class="achievement-card reveal">
+
+    <div class="achievement-top">
+        <span class="achievement-number">05</span>
+        <span class="achievement-icon">&lt;/&gt;</span>
+    </div>
+
+    <div class="achievement-content">
+
+        <p class="achievement-category">
+            COMPETITIVE PROGRAMMING
+        </p>
+
+        <h3>
+            1★ CodeChef
+        </h3>
+
+        <p>
+            Achieved 1★ on CodeChef with 500+ problems solved,
+            demonstrating consistent competitive programming practice.
+        </p>
+
+    </div>
+
+</article>
+
+
+            <!-- Editorial Lead -->
+
+            <article class="achievement-card reveal">
+
+                <div class="achievement-top">
+
+                    <span class="achievement-number">
+                        01
+                    </span>
+
+                    <span class="achievement-icon">
+                        ✦
+                    </span>
+
+                </div>
+
+
+                <div class="achievement-content">
+
+                    <p class="achievement-category">
+                        LEADERSHIP
+                    </p>
+
+                    <h3>
+                        Editorial Lead
+                    </h3>
+
+                    <p class="achievement-organization">
+                        Fusion Society · IT Department
+                    </p>
+
+                    <p>
+                        Led editorial and content-related activities
+                        for the Fusion Society, contributing to
+                        student initiatives and departmental events.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+        <!-- Bottom -->
+
+        <div class="achievement-footer reveal">
+
+            <span>
+                BUILD
+            </span>
+
+            <div class="footer-line"></div>
+
+            <span>
+                LEARN
+            </span>
+
+            <div class="footer-line"></div>
+
+            <span>
+                GROW
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CODING & EDUCATION ================= -->
+
+<section id="profiles"
+    class="relative py-32 lg:py-40 border-t border-border">
+
+    <div class="max-w-6xl mx-auto px-6 lg:px-8">
+
+
+        <!-- ================= CODING PROFILES ================= -->
+
+        <div class="section-heading mb-16 reveal">
+
+            <p class="section-number">06 — PROFILES</p>
+
+            <h2 class="section-title">
+                Where I
+                <span class="text-lavender">practice.</span>
+            </h2>
+
+            <p class="mt-6 max-w-2xl text-muted leading-relaxed">
+                Consistently improving my problem-solving and programming
+                skills through competitive programming and development.
+            </p>
+
+        </div>
+
+
+        <!-- Profile Cards -->
+
+        <div class="profile-grid">
+
+
+            <!-- LeetCode -->
+
+            <a href="https://leetcode.com/u/shreyshi123/"
+                target="_blank"
+                class="profile-card reveal">
+
+                <div class="profile-top">
+
+                    <span class="profile-index">
+                        01
+                    </span>
+
+                    <span class="profile-arrow">
+                        ↗
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <p class="profile-platform">
+                        CODING PLATFORM
+                    </p>
+
+                    <h3>
+                        LeetCode
+                    </h3>
+
+                    <p>
+                        Data Structures & Algorithms
+                    </p>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- CodeChef -->
+
+            <a href="https://www.codechef.com/users/shreyshi_11"
+                target="_blank"
+                class="profile-card reveal">
+
+                <div class="profile-top">
+
+                    <span class="profile-index">
+                        02
+                    </span>
+
+                    <span class="profile-arrow">
+                        ↗
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <p class="profile-platform">
+                        COMPETITIVE PROGRAMMING
+                    </p>
+
+                    <h3>
+                        CodeChef
+                    </h3>
+
+                    <p>
+                        Competitive Programming
+                    </p>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- GitHub -->
+
+            <a href="https://github.com/shreyshi11"
+                target="_blank"
+                class="profile-card reveal">
+
+                <div class="profile-top">
+
+                    <span class="profile-index">
+                        03
+                    </span>
+
+                    <span class="profile-arrow">
+                        ↗
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <p class="profile-platform">
+                        DEVELOPMENT
+                    </p>
+
+                    <h3>
+                        GitHub
+                    </h3>
+
+                    <p>
+                        Projects & Open Source
+                    </p>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- HackerRank -->
+
+            <a href="https://www.hackerrank.com/profile/shreyshisriwast1"
+                target="_blank"
+                class="profile-card reveal">
+
+                <div class="profile-top">
+
+                    <span class="profile-index">
+                        04
+                    </span>
+
+                    <span class="profile-arrow">
+                        ↗
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <p class="profile-platform">
+                        CODING PLATFORM
+                    </p>
+
+                    <h3>
+                        HackerRank
+                    </h3>
+
+                    <p>
+                        Problem Solving & Programming
+                    </p>
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- ================= EDUCATION ================= -->
+
+        <div class="education-wrapper">
+
+
+            <div class="section-heading mb-12 reveal">
+
+                <p class="section-number">
+                    07 — EDUCATION
+                </p>
+
+                <h2 class="section-title">
+                    Academic
+                    <span class="text-lavender">journey.</span>
+                </h2>
+
+            </div>
+
+
+            <!-- Education Item -->
+
+            <article class="education-item reveal">
+
+                <div class="education-year">
+                    2023 — 2027
+                </div>
+
+
+                <div class="education-main">
+
+                    <div>
+
+                        <p class="education-degree">
+                            BACHELOR OF TECHNOLOGY
+                        </p>
+
+                        <h3>
+                            Information Technology
+                        </h3>
+
+                        <p class="education-institute">
+                            Galgotias College of Engineering and Technology
+                        </p>
+
+                    </div>
+
+
+                    <div class="education-score">
+
+                        <span>
+                            CGPA
+                        </span>
+
+                        <strong>
+                            8.57
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- School -->
+
+            <article class="education-item reveal">
+
+                <div class="education-year">
+                    2022
+                </div>
+
+
+                <div class="education-main">
+
+                    <div>
+
+                        <p class="education-degree">
+                            HIGHER SECONDARY
+                        </p>
+
+                        <h3>
+                            Class XII
+                        </h3>
+
+                        <p class="education-institute">
+                            Nav Jeevan Mission School
+                        </p>
+
+                    </div>
+
+
+                    <div class="education-score">
+
+                        <span>
+                            PERCENTAGE
+                        </span>
+
+                        <strong>
+                            83.2%
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact"
+    class="relative py-32 lg:py-40 border-t border-border overflow-hidden">
+
+    <!-- Background Glow -->
+
+    <div class="contact-glow"></div>
+
+
+    <div class="max-w-6xl mx-auto px-6 lg:px-8 relative z-10">
+
+
+        <!-- Heading -->
+
+        <div class="contact-heading reveal">
+
+            <p class="section-number">
+                7570998943 — CONTACT
+            </p>
+
+            <h2 class="contact-title">
+                Let's build
+                <span>something</span>
+                meaningful.
+            </h2>
+
+            <p class="contact-description">
+                I'm always open to discussing new opportunities,
+                interesting projects, collaborations or simply
+                having a conversation about technology.
+            </p>
+
+        </div>
+
+
+
+        <!-- Contact Content -->
+
+        <div class="contact-layout">
+
+
+            <!-- Left -->
+
+            <div class="contact-left reveal">
+
+                <p class="contact-label">
+                    GET IN TOUCH
+                </p>
+
+
+                <!-- Email -->
+
+                <a href="mailto:YOUR_EMAIL@gmail.com"
+                    class="contact-main-link">
+
+                    shreysriv23@gmail.com
+
+                    <span>↗</span>
+
+                </a>
+
+
+                <!-- Social Links -->
+
+                <div class="social-links">
+
+                    <a href="https://www.linkedin.com/in/shreyshisriwastav"
+                        target="_blank"
+                        class="social-link">
+
+                        <span>LinkedIn</span>
+
+                        <span>↗</span>
+
+                    </a>
+
+
+                    <a href="https://github.com/shreyshi11"
+                        target="_blank"
+                        class="social-link">
+
+                        <span>GitHub</span>
+
+                        <span>↗</span>
+
+                    </a>
+
+
+                    <a href="https://leetcode.com/u/shreyshi123/"
+                        target="_blank"
+                        class="social-link">
+
+                        <span>LeetCode</span>
+
+                        <span>↗</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Right -->
+
+            <div class="contact-card reveal">
+
+                <div class="contact-card-top">
+
+                    <span>
+                        AVAILABLE FOR
+                    </span>
+
+                    <span class="availability-dot"></span>
+
+                </div>
+
+
+                <h3>
+                    Internships &
+                    <br>
+                    Full-time Opportunities
+                </h3>
+
+
+                <p>
+                    Looking for opportunities where I can contribute,
+                    learn and build impactful software.
+                </p>
+
+
+                <!-- Resume -->
+                 
+                <a href="assets/ShreyshiResume_August.pdf"
+                target="_blank"
+                class="resume-button">
+
+                <span>View Resume</span>
+                <span>↗</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer class="portfolio-footer">
+
+            <div class="footer-brand">
+
+                <span class="footer-logo">
+                    SS.
+                </span>
+
+                <span>
+                    SHREYSHI SRIVASTAV
+                </span>
+
+            </div>
+
+
+            <p>
+                Designed & built with curiosity.
+            </p>
+
+
+            <span>
+                © 2026
+            </span>
+
+        </footer>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
