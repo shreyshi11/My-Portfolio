@@ -187,8 +187,7 @@ I'm always open to connecting with fellow developers, recruiters, and people int
 
 * 💻 **GitHub:** [@shreyshi11](https://github.com/shreyshi11)
 * 🌐 **Portfolio:** [My Portfolio](https://my-portfolio-shreyshi.vercel.app/)
-* 💼 **LinkedIn:** Add your LinkedIn profile here
-* 📧 **Email:** Add your professional email here
+* 📧 **Email:** shreysriv23@gmail.com
 
 ---
 
